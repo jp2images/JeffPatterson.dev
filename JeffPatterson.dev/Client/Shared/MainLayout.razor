@@ -1,17 +1,34 @@
 ﻿@inherits LayoutComponentBase
 
+<RadzenDialog/>
+<RadzenNotification/>
+<RadzenContextMenu/>
+<RadzenTooltip />
+
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+  <div class="sidebar">
+    <NavMenu />
+  </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
+  <main>
+    @*        <div class="top-row px-4">
+    <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+    </div>*@
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
+
+    <RadzenButton ButtonStyle="ButtonStyle.Dark"
+                  Click="@AnotherButtonClick"
+                  Text="Primary"
+                  Variant="Variant.Text"/>
+
+    <article class="content px-4">
+      <RadzenButton ButtonStyle="ButtonStyle.Dark"
+                    Click=@(args => ButtonClick("Developer"))
+                    Text="Primary" />
+      
+      
+
+      @Body
+    </article>
+  </main>
 </div>
