@@ -1,7 +1,7 @@
-﻿namespace JeffPatterson.dev.Server.Pages;
-
-public partial class Resume
+﻿namespace JeffPatterson.dev.Client.Pages
 {
+  public partial class Resume
+  {
 
+  }
 }
-

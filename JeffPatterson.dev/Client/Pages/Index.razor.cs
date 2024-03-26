@@ -1,6 +1,6 @@
-﻿namespace JeffPatterson.dev.Client.Pages;
-
-public partial class Index
+﻿namespace JeffPatterson.dev.Client.Pages
 {
+  public partial class Index
+  {
+  }
 }
-

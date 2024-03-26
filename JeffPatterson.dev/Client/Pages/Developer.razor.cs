@@ -1,18 +1,19 @@
-﻿namespace JeffPatterson.dev.Client.Pages;
-
-public partial class Developer
+﻿namespace JeffPatterson.dev.Client.Pages
 {
-  private const string ButtonText = "hi";
-
-  private int _currentCount = 0;
-
-  private void IncrementCount()
+  public partial class Developer
   {
-    _currentCount++;
-  }
+    private const string ButtonText = "hi";
 
-  private void ClickMe()
-  {
-    _currentCount++;
+    private int _currentCount = 0;
+
+    private void IncrementCount()
+    {
+      _currentCount++;
+    }
+
+    private void ClickMe()
+    {
+      _currentCount++;
+    }
   }
 }

@@ -1,12 +1,12 @@
-﻿namespace JeffPatterson.dev.Client.Pages;
-
-public partial class QmkFirmware
+﻿namespace JeffPatterson.dev.Client.Pages
 {
-  private int _currentCount = 0;
-
-  private void IncrementCount()
+  public partial class QmkFirmware
   {
-    _currentCount++;
+    private int _currentCount = 0;
+
+    private void IncrementCount()
+    {
+      _currentCount++;
+    }
   }
 }
-
