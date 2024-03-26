@@ -1,7 +1,6 @@
 ﻿namespace JeffPatterson.dev.Server.Pages;
 
-public partial class Resume
+public partial class ShellInfo
 {
-
 }
 

@@ -1,6 +1,6 @@
-﻿namespace JeffPatterson.dev.Client.Pages
+﻿namespace JeffPatterson.dev.Client.Pages;
+
+public partial class About
 {
-  public partial class About
-  {
-  }
 }
+
