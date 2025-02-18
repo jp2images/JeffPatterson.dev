@@ -4,19 +4,24 @@ using Radzen;
 namespace JeffPatterson.dev.Client.Shared;
 public partial class NavMenu
 {
-  [Inject] protected TooltipService toolTipService { get; set; }
+  [Inject] protected TooltipService ToolTipService { get; set; }
 
 
-  private bool collapseNavMenu = true;
+  private bool _collapseNavMenu = true;
 
-  private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+  public NavMenu(TooltipService toolTipService)
+  {
+    this.ToolTipService = toolTipService;
+  }
+
+  private string? NavMenuCssClass => _collapseNavMenu ? "collapse" : null;
 
 
   private void ToggleNavMenu()
   {
-    collapseNavMenu = !collapseNavMenu;
+    _collapseNavMenu = !_collapseNavMenu;
   }
 
-  void ShowTooltip(ElementReference elementReference, TooltipOptions options = null) => toolTipService.Open(elementReference, "Some content", options);
+  void ShowTooltip(ElementReference elementReference, TooltipOptions options = null) => ToolTipService.Open(elementReference, "Some content", options);
 
 }
