@@ -4,11 +4,11 @@ using Radzen;
 namespace JeffPatterson.dev.Client.Shared;
 public partial class MainLayout
 {
-  [Inject] private NotificationService NotificationService { get; set; }
+  [Inject] private NotificationService? NotificationService { get; set; }
 
   private void ButtonClick(string clickedText)
   {
-    NotificationService.Notify(new NotificationMessage
+    NotificationService!.Notify(new NotificationMessage
     {
       Severity = NotificationSeverity.Info,
       Summary = "This Button Clicked",
@@ -18,7 +18,7 @@ public partial class MainLayout
 
   private void AnotherButtonClick()
   {
-    NotificationService.Notify(new NotificationMessage
+    NotificationService!.Notify(new NotificationMessage
     {
       Severity = NotificationSeverity.Info,
       Summary = "Another Button Clicked",

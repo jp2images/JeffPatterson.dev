@@ -22,6 +22,6 @@ public partial class NavMenu
     _collapseNavMenu = !_collapseNavMenu;
   }
 
-  void ShowTooltip(ElementReference elementReference, TooltipOptions options = null) => ToolTipService.Open(elementReference, "Some content", options);
+  void ShowTooltip(ElementReference elementReference, TooltipOptions? options = null) => ToolTipService.Open(elementReference, "Some content", options);
 
 }
